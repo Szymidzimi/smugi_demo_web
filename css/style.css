@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', 'Arial', serif;
+}
+body{
+    overflow-x:hidden;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222831;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.logo,li,a,button{
+    text-decoration: none;
+    list-style: none;
+    color: #eeeeee;
+    font-size: 1.3rem;
+    transition: all 1s ease 0s;
+}
+.logo{
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: 5%;
+    cursor:default;
+}
+nav li{
+   display: inline-block;
+    padding: 0 20px;
+}
+nav li a:hover{
+    color:#00adb5 ;
+}
+button{
+    background-color: #00adb5;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin-right: 40px;
+    transition: all 0.5s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 173, 181,0.5)
+}
+.main{
+    width: 100vw;
+    background-color:#393e46 ;
+    padding-top: 70px;
+    padding-bottom: 125px;
+    position: relative;
+}
+
+#about, #offer,#contact, footer{
+    width: 80%;
+    margin: 70px auto;
+    color: #eeeeee;
+    cursor: default;
+}
+.offer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+article{
+    border:5px solid #00adb5 ;
+    width: 230px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px; 
+    text-align: center;
+    z-index: 1;
+    transition: .2s ease;
+}
+article:hover{
+    transform: scale(1.2)
+}
+.contact_date{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.map{
+	width: 40vw;
+	height: 40vw;
+	border: 0;
+    min-width: 400px;
+    display: flex;
+    z-index: 1;
+}
+hr {
+    border-style: none;
+    border-top: dotted 10px;
+    color: #00adb5;
+    width: 7%;
+    margin: 0 auto;
+  }
+h2{
+    font-size: 2rem;
+    padding: 25px 0px;
+  }
+h3{
+    padding: 30px 0px;
+  }
+article p{
+    padding: 0 10px 10px 10px;
+  }
+.adress{
+    text-align: left;
+    padding-top: 30px;
+  }
+#triangle1 {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    z-index: 0; 
+	width: 0;
+	height: 0;
+	border-top: 50vw solid #00adb5;
+	border-right: 50vw solid transparent;
+	margin: 0 auto 0;
+}
+#triangle2 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0; 
+	width: 0;
+	height: 0;
+	border-bottom: 50vw solid #00adb5;
+	border-left: 50vw solid transparent;
+	margin: 0 auto 0;
+}
+#about p,#about h2,.adress,#offer{
+    position: relative;
+    z-index: 1;
+}
+img{
+    padding-top: 10px;
+    width: 100vw;
+    border: none;
+}
+footer{
+    margin: 0;
+    background-color: #222831;
+    width: 100vw;
+    text-align: center;
+}
+footer p{
+    padding: 20px ;
+    width: 70%;
+    margin: auto;
+}
+.welcome{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.icon:hover{
+    opacity: 0.7;
+    transform: translateY(-10px);
+    transition: 0.2s ease;
+}
+.social_media{
+    margin-right: 40px;
+}
